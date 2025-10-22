@@ -13,9 +13,6 @@ bot.command('start', async (ctx) => {
         .text('JavaScript')
         .text('Vue')
         .row()
-        .text('TypeScript')
-        .text('Git')
-        .row()
         .text('Случайный вопрос')
         .resized();
     await ctx.reply('Привет! Я - Frontend Interview Prep Bot 🤖 \nЯ помогу тебе подготовиться к интервью по фронтенду');
@@ -24,7 +21,7 @@ bot.command('start', async (ctx) => {
     });
 });
 
-bot.hears(['HTML', 'CSS', 'JavaScript', 'Vue', 'TypeScript', 'Git', 'Случайный вопрос'], async (ctx) => {
+bot.hears(['HTML', 'CSS', 'JavaScript', 'Vue', 'Случайный вопрос'], async (ctx) => {
     const topic = ctx.message.text.toLowerCase();
     const { question, questionTopic } = getRandomQuestion(topic);
     let inlineKeyboard;
