@@ -499,38 +499,538 @@
         { "id": 3, "text": "reduce()", "isCorrect": false },
         { "id": 4, "text": "forEach()", "isCorrect": false }
       ]
+    },
+    {
+      "id": 15,
+      "text": "Что выведет выражение: console.log(typeof null)?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "'null'", "isCorrect": false },
+        { "id": 2, "text": "'object'", "isCorrect": true },
+        { "id": 3, "text": "'undefined'", "isCorrect": false },
+        { "id": 4, "text": "'number'", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Что такое замыкание (closure) в JavaScript?",
+      "hasOptions": false,
+      "answer": "Замыкание — это функция, которая запоминает своё лексическое окружение даже после того, как внешняя функция завершила выполнение."
+    },
+    {
+      "id": 17,
+      "text": "Чему равен результат 0.1 + 0.2 == 0.3?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "true", "isCorrect": false },
+        { "id": 2, "text": "false", "isCorrect": true },
+        { "id": 3, "text": "undefined", "isCorrect": false },
+        { "id": 4, "text": "NaN", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Какое значение вернёт typeof NaN?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "'NaN'", "isCorrect": false },
+        { "id": 2, "text": "'number'", "isCorrect": true },
+        { "id": 3, "text": "'undefined'", "isCorrect": false },
+        { "id": 4, "text": "'object'", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Что делает оператор '==='?",
+      "hasOptions": false,
+      "answer": "Проверяет равенство без приведения типов (строгое сравнение)."
+    },
+    {
+      "id": 20,
+      "text": "Что произойдет, если вызвать функцию перед её объявлением с помощью function declaration?",
+      "hasOptions": false,
+      "answer": "Она выполнится, так как объявления функций поднимаются (hoisting)."
+    },
+    {
+      "id": 21,
+      "text": "Что делает метод Array.prototype.map()?",
+      "hasOptions": false,
+      "answer": "Создаёт новый массив, применяя переданную функцию к каждому элементу исходного массива."
+    },
+    {
+      "id": 22,
+      "text": "Как удалить последний элемент массива?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "arr.pop()", "isCorrect": true },
+        { "id": 2, "text": "arr.shift()", "isCorrect": false },
+        { "id": 3, "text": "arr.remove()", "isCorrect": false },
+        { "id": 4, "text": "delete arr[-1]", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Что делает метод 'Array.prototype.filter()'?",
+      "hasOptions": false,
+      "answer": "Возвращает новый массив с элементами, которые прошли проверку функции-предиката."
+    },
+    {
+      "id": 24,
+      "text": "Как проверить, является ли переменная массивом?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "typeof arr === 'array'", "isCorrect": false },
+        { "id": 2, "text": "Array.isArray(arr)", "isCorrect": true },
+        { "id": 3, "text": "arr instanceof Object", "isCorrect": false },
+        { "id": 4, "text": "arr.type === 'array'", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 25,
+      "text": "Что делает метод 'Object.keys()'?",
+      "hasOptions": false,
+      "answer": "Возвращает массив всех ключей (имен свойств) объекта."
+    },
+    {
+      "id": 26,
+      "text": "Что такое промис (Promise)?",
+      "hasOptions": false,
+      "answer": "Промис — это объект, представляющий результат асинхронной операции, который может находиться в одном из трёх состояний: pending, fulfilled или rejected."
+    },
+    {
+      "id": 27,
+      "text": "Какой метод используется для обработки успешного выполнения промиса?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": ".finally()", "isCorrect": false },
+        { "id": 2, "text": ".then()", "isCorrect": true },
+        { "id": 3, "text": ".catch()", "isCorrect": false },
+        { "id": 4, "text": ".done()", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 28,
+      "text": "Что делает оператор 'spread' (...) ?",
+      "hasOptions": false,
+      "answer": "Разворачивает массив или объект в месте, где ожидаются отдельные элементы или ключи."
+    },
+    {
+      "id": 29,
+      "text": "Что делает метод 'JSON.stringify()'?",
+      "hasOptions": false,
+      "answer": "Преобразует объект JavaScript в строку формата JSON."
+    },
+    {
+      "id": 30,
+      "text": "Как остановить выполнение цикла for?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "exit", "isCorrect": false },
+        { "id": 2, "text": "stop", "isCorrect": false },
+        { "id": 3, "text": "break", "isCorrect": true },
+        { "id": 4, "text": "cancel", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 31,
+      "text": "Что делает метод 'setTimeout'?",
+      "hasOptions": false,
+      "answer": "Запускает выполнение функции через заданное время (в миллисекундах)."
+    },
+    {
+      "id": 32,
+      "text": "Как объединить два массива в один?",
+      "hasOptions": false,
+      "answer": "С помощью [...arr1, ...arr2] или arr1.concat(arr2)."
+    },
+    {
+      "id": 33,
+      "text": "Что вернёт выражение Boolean('0')?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "false", "isCorrect": false },
+        { "id": 2, "text": "true", "isCorrect": true },
+        { "id": 3, "text": "undefined", "isCorrect": false },
+        { "id": 4, "text": "null", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 34,
+      "text": "Что делает оператор 'typeof'?",
+      "hasOptions": false,
+      "answer": "Возвращает тип переданного значения в виде строки."
+    },
+    {
+      "id": 35,
+      "text": "Что произойдёт, если вызвать промис без обработчика .catch() при ошибке?",
+      "hasOptions": false,
+      "answer": "Произойдёт необработанное отклонение (UnhandledPromiseRejection), которое может вызвать ошибку в консоли."
+    },
+    {
+      "id": 36,
+      "text": "Как скопировать объект без ссылки на оригинал?",
+      "hasOptions": false,
+      "answer": "Можно использовать spread (...obj) или structuredClone(obj)."
+    },
+    {
+      "id": 37,
+      "text": "Что делает метод 'bind()'?",
+      "hasOptions": false,
+      "answer": "Создаёт новую функцию с привязанным контекстом this."
+    },
+    {
+      "id": 38,
+      "text": "Какой результат у выражения [] == ![] ?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "true", "isCorrect": true },
+        { "id": 2, "text": "false", "isCorrect": false },
+        { "id": 3, "text": "undefined", "isCorrect": false },
+        { "id": 4, "text": "TypeError", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 39,
+      "text": "Что делает оператор '??' (nullish coalescing)?",
+      "hasOptions": false,
+      "answer": "Возвращает правый операнд, если левый равен null или undefined."
+    },
+    {
+      "id": 40,
+      "text": "Что такое 'this' в стрелочной функции?",
+      "hasOptions": false,
+      "answer": "В стрелочных функциях 'this' не имеет собственного контекста и берётся из внешней области видимости."
+    },
+    {
+      "id": 41,
+      "text": "Что делает метод 'reduce()'?",
+      "hasOptions": false,
+      "answer": "Последовательно сводит элементы массива к одному значению, используя функцию-аккумулятор."
+    },
+    {
+      "id": 42,
+      "text": "Чем отличается 'var' от 'let'?",
+      "hasOptions": false,
+      "answer": "Переменные с var имеют функциональную область видимости и поднимаются; let — блочную область видимости."
+    },
+    {
+      "id": 43,
+      "text": "Как проверить, существует ли свойство в объекте?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "'key' in obj", "isCorrect": true },
+        { "id": 2, "text": "obj.contains(key)", "isCorrect": false },
+        { "id": 3, "text": "obj.has(key)", "isCorrect": false },
+        { "id": 4, "text": "obj[key] != undefined", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 44,
+      "text": "Что делает оператор 'delete'?",
+      "hasOptions": false,
+      "answer": "Удаляет свойство из объекта."
+    },
+    {
+      "id": 45,
+      "text": "Что делает метод 'Promise.all()'?",
+      "hasOptions": false,
+      "answer": "Ожидает выполнения всех промисов и возвращает массив их результатов или ошибку, если хоть один отклонён."
+    },
+    {
+      "id": 46,
+      "text": "Что такое 'event loop'?",
+      "hasOptions": false,
+      "answer": "Это механизм JavaScript, который управляет выполнением синхронного и асинхронного кода через очередь событий."
+    },
+    {
+      "id": 47,
+      "text": "Что делает оператор 'instanceof'?",
+      "hasOptions": false,
+      "answer": "Проверяет, принадлежит ли объект указанному классу или его прототипу."
+    },
+    {
+      "id": 48,
+      "text": "Как преобразовать строку в число?",
+      "hasOptions": false,
+      "answer": "С помощью Number(str), +str или parseInt(str)."
+    },
+    {
+      "id": 49,
+      "text": "Что делает метод 'Array.from()'?",
+      "hasOptions": false,
+      "answer": "Создаёт массив из итерируемого или подобного массиву объекта."
+    },
+    {
+      "id": 50,
+      "text": "Что такое 'hoisting'?",
+      "hasOptions": false,
+      "answer": "Поднятие объявлений переменных и функций в верхнюю область видимости."
+    },
+    {
+      "id": 51,
+      "text": "Что делает метод 'forEach()'?",
+      "hasOptions": false,
+      "answer": "Выполняет переданную функцию один раз для каждого элемента массива без возврата значения."
+    },
+    {
+      "id": 52,
+      "text": "Что делает 'try...catch'?",
+      "hasOptions": false,
+      "answer": "Позволяет перехватывать и обрабатывать ошибки выполнения."
+    },
+    {
+      "id": 53,
+      "text": "Что такое прототипное наследование?",
+      "hasOptions": false,
+      "answer": "Механизм, при котором объекты могут наследовать свойства и методы от других объектов через цепочку прототипов."
+    },
+    {
+      "id": 54,
+      "text": "Что делает метод 'async/await'?",
+      "hasOptions": false,
+      "answer": "Позволяет писать асинхронный код, который выглядит как синхронный, ожидая выполнения промисов."
     }
   ],
   "vue": [
     {
       "id": 1,
-      "text": " Что такое Vue.js?",
+      "text": "Что такое Vue.js?",
       "hasOptions": false,
-      "answer": "Vue - это прогрессивный фреймворк для создания пользовательских интерфейсов, который был разработан для постепенного внедрения. Его основная библиотека ориентирована исключительно на уровень представления, поэтому ее можно легко интегрировать с другими проектами или библиотеками."
+      "answer": "Vue.js — это прогрессивный JavaScript-фреймворк для создания пользовательских интерфейсов."
     },
     {
       "id": 2,
-      "text": "Каковы основные особенности Vue.js?",
+      "text": "Как создаётся новый проект Vue с помощью CLI?",
       "hasOptions": false,
-      "answer": "Виртуальный DOM: Vue использует виртуальный DOM, аналогичный другим фреймворкам, таким как React, Ember и т. д.>\nКомпоненты: Компоненты являются основным строительным блоком для многоразовых элементов в приложениях Vue.\nШаблоны: Vue использует шаблоны на основе HTML.\nМаршрутизация: Vue предоставляет собственный маршрутизатор.\nВстроенные директивы : например, v-if или v-for.\nЛегкость: Vue - легкая библиотека по сравнению с другими фреймворками."
+      "answer": "Командой 'vue create project-name' или 'npm init vue@latest' для Vue 3."
     },
     {
       "id": 3,
-      "text": "Почему вы выбрали Vue вместо React или Angular?",
+      "text": "Что делает директива v-if?",
       "hasOptions": false,
-      "answer": "Vue.js сочетает в себе лучшие части Angular и React. Vue.js - более гибкое и менее самоуверенное решение, чем Angular, но это все еще фреймворк, а не библиотека пользовательского интерфейса, такая как React."
+      "answer": "Условно отображает элемент в DOM, если выражение истинно."
     },
     {
       "id": 4,
-      "text": "Что такое SFC?",
+      "text": "Чем отличается v-if от v-show?",
       "hasOptions": false,
-      "answer": "Однофайловые компоненты Vue (также известные как *.vue файлы, сокращенно SFC) - это специальный формат файла, который позволяет нам инкапсулировать шаблон ( template), логику ( script) и стиль ( style) компонента Vue в одном файле.\n\nVue SFC - это формат файла для конкретной платформы, который должен быть предварительно скомпилирован с помощью @ vue / compiler-sfc в стандартные JavaScript и CSS. Скомпилированный SFC - это стандартный модуль JavaScript (ES)"
+      "answer": "v-if добавляет или удаляет элемент из DOM, а v-show только скрывает его через display: none."
     },
     {
       "id": 5,
-      "text": "Что такое вычисляемые свойства?",
+      "text": "Что делает директива v-for?",
       "hasOptions": false,
-      "answer": "Вычисленные свойства следует использовать для удаления из шаблонов как можно большего количества логики, поскольку в противном случае шаблон станет раздутым и его будет труднее поддерживать. Если у вас сложная логика, включая реактивные данные в вашем шаблоне, вы должны вместо этого использовать вычисляемое свойство.\n\nВместо методов кэшируются вычисляемые свойства на основе их реактивных зависимостей. Вычисляемое свойство будет переоцениваться только после изменения некоторых его реактивных зависимостей."
+      "answer": "Позволяет перебирать массивы или объекты и рендерить элемент для каждого значения."
+    },
+    {
+      "id": 6,
+      "text": "Как задать ключ элементу в цикле v-for?",
+      "hasOptions": false,
+      "answer": "С помощью атрибута :key, например :key=\"item.id\"."
+    },
+    {
+      "id": 7,
+      "text": "Для чего используется директива v-bind?",
+      "hasOptions": false,
+      "answer": "Для динамической привязки атрибутов или props к выражениям."
+    },
+    {
+      "id": 8,
+      "text": "Что делает директива v-model?",
+      "hasOptions": false,
+      "answer": "Создаёт двустороннюю привязку данных между переменной и элементом формы."
+    },
+    {
+      "id": 9,
+      "text": "Что делает директива v-on?",
+      "hasOptions": false,
+      "answer": "Добавляет обработчик событий, например v-on:click или @click."
+    },
+    {
+      "id": 10,
+      "text": "Что такое реактивность во Vue?",
+      "hasOptions": false,
+      "answer": "Это механизм, при котором изменения в данных автоматически обновляют DOM."
+    },
+    {
+      "id": 11,
+      "text": "Что делает функция ref()?",
+      "hasOptions": false,
+      "answer": "Создаёт реактивную ссылку на значение, доступную как ref.value."
+    },
+    {
+      "id": 12,
+      "text": "Чем отличается reactive() от ref()?",
+      "hasOptions": false,
+      "answer": "ref используется для примитивов, а reactive — для объектов и массивов."
+    },
+    {
+      "id": 13,
+      "text": "Что такое computed свойства?",
+      "hasOptions": false,
+      "answer": "Это вычисляемые свойства, которые кэшируются и пересчитываются только при изменении зависимостей."
+    },
+    {
+      "id": 14,
+      "text": "Для чего используется watch?",
+      "hasOptions": false,
+      "answer": "Для отслеживания изменений реактивных переменных и выполнения побочных действий."
+    },
+    {
+      "id": 15,
+      "text": "Что делает метод defineProps()?",
+      "hasOptions": false,
+      "answer": "Определяет входные параметры (props) компонента в script setup."
+    },
+    {
+      "id": 16,
+      "text": "Что делает defineEmits()?",
+      "hasOptions": false,
+      "answer": "Определяет события, которые компонент может испускать (emit)."
+    },
+    {
+      "id": 17,
+      "text": "Что такое слоты (slots) во Vue?",
+      "hasOptions": false,
+      "answer": "Это способ передачи содержимого от родительского компонента в дочерний через <slot>."
+    },
+    {
+      "id": 18,
+      "text": "Что делает scoped слот?",
+      "hasOptions": false,
+      "answer": "Позволяет передавать данные из дочернего компонента в содержимое слота родителя."
+    },
+    {
+      "id": 19,
+      "text": "Что такое provide/inject?",
+      "hasOptions": false,
+      "answer": "Это механизм передачи данных от родителя к потомкам без явных props."
+    },
+    {
+      "id": 20,
+      "text": "Что делает директива v-html?",
+      "hasOptions": false,
+      "answer": "Вставляет HTML-код в элемент, интерпретируя его как разметку (осторожно с XSS)."
+    },
+    {
+      "id": 21,
+      "text": "Как задать класс динамически?",
+      "hasOptions": false,
+      "answer": "С помощью :class=\"{ active: isActive }\" или :class=\"[classA, classB]\"."
+    },
+    {
+      "id": 22,
+      "text": "Как отследить жизненный цикл компонента?",
+      "hasOptions": false,
+      "answer": "С помощью хуков жизненного цикла, например onMounted(), onUpdated(), onUnmounted()."
+    },
+    {
+      "id": 23,
+      "text": "Что делает хук onMounted()?",
+      "hasOptions": false,
+      "answer": "Выполняет код после монтирования компонента в DOM."
+    },
+    {
+      "id": 24,
+      "text": "Какой хук используется перед удалением компонента?",
+      "hasOptions": false,
+      "answer": "onUnmounted()."
+    },
+    {
+      "id": 25,
+      "text": "Что делает компонент <Teleport>?",
+      "hasOptions": false,
+      "answer": "Позволяет рендерить дочерний элемент вне текущей иерархии DOM."
+    },
+    {
+      "id": 26,
+      "text": "Для чего используется <Suspense>?",
+      "hasOptions": false,
+      "answer": "Для отображения fallback-контента, пока загружается асинхронный компонент."
+    },
+    {
+      "id": 27,
+      "text": "Что делает директива v-once?",
+      "hasOptions": false,
+      "answer": "Рендерит элемент один раз без повторного обновления при изменении данных."
+    },
+    {
+      "id": 28,
+      "text": "Что делает директива v-memo (Vue 3.3+)?",
+      "hasOptions": false,
+      "answer": "Кэширует рендер компонента, если не изменились указанные зависимости."
+    },
+    {
+      "id": 29,
+      "text": "Что делает keep-alive?",
+      "hasOptions": false,
+      "answer": "Кэширует компонент, чтобы при повторном показе не пересоздавать его заново."
+    },
+    {
+      "id": 30,
+      "text": "Как передать данные из дочернего компонента в родительский?",
+      "hasOptions": false,
+      "answer": "Через emit события и прослушивание в родителе (например: @update=\"handler\")."
+    },
+    {
+      "id": 31,
+      "text": "Что делает функция nextTick()?",
+      "hasOptions": false,
+      "answer": "Позволяет выполнить код после обновления DOM Vue."
+    },
+    {
+      "id": 32,
+      "text": "Что такое Pinia?",
+      "hasOptions": false,
+      "answer": "Это официальная система управления состоянием для Vue 3, замена Vuex."
+    },
+    {
+      "id": 33,
+      "text": "Как импортировать composable-функцию?",
+      "hasOptions": false,
+      "answer": "Обычно из папки composables: import { useUser } from '@/composables/useUser'."
+    },
+    {
+      "id": 34,
+      "text": "Что делает defineExpose()?",
+      "hasOptions": false,
+      "answer": "Позволяет явно указать, какие свойства и методы доступны родителю при использовании ref."
+    },
+    {
+      "id": 35,
+      "text": "Что делает <script setup>?",
+      "hasOptions": false,
+      "answer": "Это упрощённый синтаксис для Composition API, автоматически делает импортируемые переменные доступными в шаблоне."
+    },
+    {
+      "id": 36,
+      "text": "Чем отличается Options API от Composition API?",
+      "hasOptions": false,
+      "answer": "Options API использует объект с полями data, methods, computed, а Composition API — функции и хуки внутри setup()."
+    },
+    {
+      "id": 37,
+      "text": "Как подключить роутер в проект Vue?",
+      "hasOptions": false,
+      "answer": "Через Vue Router: создаётся routes.js, импортируется createRouter и используется в createApp(app).use(router)."
+    },
+    {
+      "id": 38,
+      "text": "Как создать глобальный компонент?",
+      "hasOptions": false,
+      "answer": "Зарегистрировать его через app.component('Имя', Компонент)."
+    },
+    {
+      "id": 39,
+      "text": "Как использовать provide/inject с типами в TypeScript?",
+      "hasOptions": false,
+      "answer": "Передавать типы через дженерики, например provide<MyType>('key', data) и inject<MyType>('key')."
+    },
+    {
+      "id": 40,
+      "text": "Как можно оптимизировать производительность Vue-приложения?",
+      "hasOptions": false,
+      "answer": "Использовать lazy loading, keep-alive, memo, computed, v-once, динамический импорт и отслеживать ререндеры через devtools."
     }
   ]
 }
